@@ -1,0 +1,63 @@
+{
+  "name": "image-hiding-system",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@hscmap/vue-window": "^2.4.4",
+    "axios": "^0.24.0",
+    "core-js": "^2.6.5",
+    "d3": "^5.12.0",
+    "d3-voronoi-map": "^2.1.0",
+    "d3-voronoi-treemap": "^1.1.1",
+    "d3-weighted-voronoi": "^1.1.2",
+    "element-ui": "^2.15.6",
+    "jquery": "^3.4.1",
+    "react": "^18.2.0",
+    "react-d3-graph": "^2.6.0",
+    "seedrandom": "^3.0.5",
+    "vis": "^4.21.0-EOL",
+    "vue": "^2.6.10",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.6.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

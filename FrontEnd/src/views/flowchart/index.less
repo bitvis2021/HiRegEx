@@ -1,0 +1,101 @@
+#svg {
+    background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+    height: 100%;
+    width: 100%;
+}
+
+#chart {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #dfdfdf;
+}
+
+
+#position {
+    position: absolute;
+    right: 4px;
+}
+
+#regexPosition{
+    position: absolute;
+    left:2px;
+}
+
+.unselectable {
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.connector {
+    cursor: crosshair;
+    opacity: 0;
+}
+
+.connector.active {
+    opacity: 1;
+    fill: white;
+    stroke: #bbbbbb;
+    stroke-width: 1px;
+}
+
+.connector:hover {
+    stroke: red;
+}
+
+.title, .content {
+    //font-size: 12px;
+    text-anchor:middle;
+    alignment-baseline: middle;
+}
+
+#svg .selection {
+    stroke: lightblue;
+    fill: lightblue;
+    fill-opacity: 0.8;
+    display: none;
+}
+
+#svg .selection.active {
+    display: block;
+}
+
+.node-body {
+    fill: white;
+    stroke-width: 0px;
+    stroke: #000000;
+    &.selected {
+        stroke: steelblue !important;
+        stroke-width: 3px !important;
+    }
+    &:hover {
+        stroke: steelblue;
+        stroke-width: 1px;
+    }
+    &.hover {
+        stroke: steelblue;
+        stroke-width: 1px;
+    }
+}
+
+.node-title {
+    stroke-width: 1px;
+    stroke: #bbbbbb;
+    &.selected {
+        stroke: #666666 !important;
+        stroke-width: 2.5px !important;
+    }
+    &:hover {
+        stroke: steelblue;
+        stroke-width: 1px;
+    }
+    &.hover {
+        stroke: steelblue;
+        stroke-width: 1px;
+    }
+}
